@@ -42,7 +42,7 @@ function tempConvertCelCallback() {
     
     // verify inputs
     if(isNaN(celsius) === true) {
-        alert("Invalid temperature, try again");
+        alert("Invalid temperature. Make sure you didn't enter text into the field.");
         return;
     }
     
@@ -76,7 +76,7 @@ function tempConvertFahCallback() {
     
     // verify inputs
     if(isNaN(fahrenheit) === true) {
-        alert("Invalid temperature, try again");
+        alert("Invalid temperature. Make sure you didn't enter text into the field.");
         return;
     }
     
