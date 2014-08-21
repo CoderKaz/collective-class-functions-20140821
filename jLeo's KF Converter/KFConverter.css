@@ -1,0 +1,19 @@
+body {
+    background-color: #00ff33;
+    color: #000066;
+}
+h1 {
+    color: #000099;
+    border: 2px solid blue;
+    border-width: .2em;
+    border-padding: 5px 5px 15px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+p {
+    background-color: blue;
+    color: red;
+}
+button {
+    background-color: blue;
+    color: red;
+}
