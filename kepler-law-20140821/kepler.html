@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Utf-8">
+        <title>Kepler's Law</title>
+        <script type = "text/javascript" src="kepler.js"></script>
+    </head>
+    <body>
+        <form>
+            <label for = "aye">a</label>
+            <input type = "text" id = "aye" name = "aye"><br>
+            <label for = "ecc">eccentricity</label>
+            <input type = "text" id = "ecc" name = "ecc"><br>
+            <label for = "theta">enter in degrees</label>
+            <input type = "text" id = "theta" name = "theta"><br>
+            <button type = "button" onClick="keplerCallback();">Solve for r</button>
+        </form>
+        <p id = "answerArea"></p>
+    </body>
+</html>
