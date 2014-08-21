@@ -7,8 +7,8 @@
 **/
 
 function exchangeRateMultiply(first, second){
-    var sum = first * second;
-    return (sum);
+    var rubles = first * second;
+    return (rubles);
 }
 
 /**
@@ -32,8 +32,8 @@ function exchangeRateMultiplyCallback() {
     }
     
     //use the worker function and get its output
-    var rubbles = exchangeRateMultiply(pesos,exchangeRate);
+    var rubles = exchangeRateMultiply(pesos,exchangeRate);
     
-    //do something "useful" i.e,, display the answer
-    document.getElementById("outputArea").innerHTML =  rubbles +" Rubbles";
+    //do something "useful" i.e. display the answer
+    document.getElementById("outputArea").innerHTML =  rubbles +" Rubles";
 } 
