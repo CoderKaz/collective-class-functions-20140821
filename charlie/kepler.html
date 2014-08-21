@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>JavaScript Functions</title>
+        <script type="text/javascript" src="kepler.js" /></script>
+    </head>
+    <body>
+        <form>
+            <label for="p">Semi-latus rectum</lable>
+            <input type="text" id="p" name="p" /><br />
+            
+            <label for="e">Eccentricity</label>
+            <input type="text" id="e" name="e" /><br />
+            
+            <label for="t">Angle to the planet's current position from its closest approach, as seen from the Sun</label>
+            <input type="text" id="t" name="t" /><br />
+            
+            <button type="button" onClick="keplerCallBack();">Distance</button>
+        </form>
+        <p id="outputArea"></p>
+    </body>
+</html>
