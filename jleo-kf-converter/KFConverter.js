@@ -17,7 +17,7 @@ function convertKtoFCallback() {
 
 // next function, converting F to K
 function convertFtoK(degreesF) {
-    var sum = (degreesF + 459)*5/9;
+    var sum = (degreesF + 459)*5/9; 
         return(sum);
 }
 
@@ -28,7 +28,7 @@ function convertFtoKCallback() {
         alert("Invalid Input -- please type in numbers only");
         return;
     }
-    var sum = convertFtoK(degreesF);
+    var sum = convertFtoK(degreesF); 
     document.getElementById("outputArea").innerHTML = "Degrees in Kelvin are " + sum;
 }
 
