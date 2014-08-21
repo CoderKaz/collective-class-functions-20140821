@@ -35,5 +35,5 @@ function exchangeRateMultiplyCallback() {
     var rubles = exchangeRateMultiply(pesos,exchangeRate);
     
     //do something "useful" i.e. display the answer
-    document.getElementById("outputArea").innerHTML =  rubbles +" Rubles";
+    document.getElementById("outputArea").innerHTML =  rubles +" Rubles";
 } 
