@@ -10,7 +10,7 @@ function convertLiToGal() {
         return;
     }
     
-    var gallon = liters * 3.74;
+    var gallon = liters * .2642007;
     document.getElementById("outputArea").innerHTML = gallon;
 }
     
