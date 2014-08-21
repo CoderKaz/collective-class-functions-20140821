@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Converting Temperature</title>
+        <script type="text/javascript" src="temp-conversion_jim.js"></script>
+    </head>
+    <body>
+        <form>
+            <label for="celsius">Enter the current temperature in Celsius</label>
+            <input type="text" id="celsius" name="celsius"  /><br />
+            <button type="button" onclick="tempConvertCelCallback();">Convert to Fahrenheit</button>
+        </form>
+        <p id="outputAreaFahrenheit"></p>
+        
+        <form>
+            <label for="fahrenheit">Enter the current temperature in Fahrenheit</label>
+            <input type="text" id="fahrenheit" name="fahrenheit" /><br />
+            <button type="button" onclick="tempConvertFahCallback();">Convert to Fahrenheit</button>
+        </form>
+        <p id="outputAreaCelsius"></p>
+
+    </body>
+</html>
