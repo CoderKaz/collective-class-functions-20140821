@@ -5,10 +5,10 @@
  * @returns double sum of celsius converted to fahrenheit
  **/
 function tempConvertCel(celsius) {
-    // Multiply Celsius by 1.8 then add 32
+    // Multiply Celsius by 1.8, then add 32
     var sum = (celsius * 1.8) + 32;
     
-    // when the task is coplete return the reults
+    // when the task is complete return the reults
     return(sum);
 }
 
@@ -24,7 +24,7 @@ function tempConvertFah(fahrenheit) {
     var sum = (fahrenheit - 32) / 1.8;
     var sum = sum.toFixed(2);
     
-    // when the task is coplete return the reults
+    // when the task is complete return the reults
     return(sum);
 }
 
@@ -48,7 +48,7 @@ function tempConvertCelCallback() {
     // use the worker function and get the output
     var sum = tempConvertCel(celsius);
     
-    // do something "useful" - i.e., display the answer
+    // display the converted answer
     document.getElementById("outputAreaFahrenheit").innerHTML = sum + " degrees Fahernheit";
 
 }
@@ -73,17 +73,8 @@ function tempConvertFahCallback() {
     // use the worker function and get the output
     var sum = tempConvertFah(fahrenheit);
     
-    // do something "useful" - i.e., display the answer
+    // display the converted answer
     document.getElementById("outputAreaCelsius").innerHTML = sum + " degrees Celsius";
 
 }
 
-
-/**
- * keystronke
- **/
-function check() {
-    if (window.even.which == 13) {
-        tempConvertCelCallback();
-    }
-}
