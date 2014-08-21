@@ -69,6 +69,9 @@ function tempConvertFahCallback() {
         alert("Invalid temperature, try again");
         return;
     }
+    if (fahrenheit > 100) {
+        alert("HOT HOT HOT!");
+    }
     
     // use the worker function and get the output
     var sum = tempConvertFah(fahrenheit);
