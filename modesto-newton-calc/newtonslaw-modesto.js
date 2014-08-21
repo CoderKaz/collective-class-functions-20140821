@@ -4,7 +4,9 @@ function newtonsLaw(massOne, massTwo, radiusSqr) {
     var radius = radiusSqr * radiusSqr;
     var mR = mass / radius;
     var gravity = 6.674e-11;
-    var Force = gravity * mR;
+    var force = gravity * mR;
+    
+    return(force);
 }
 
 function newtonsLawCallback() {
