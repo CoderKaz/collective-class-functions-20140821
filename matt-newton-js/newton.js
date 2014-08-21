@@ -30,7 +30,7 @@ function forceCallBack() {
     distance = parseFloat(distance);
 
     if (isNaN(gravity) === true || isNaN(massOne) === true || isNaN(massTwo) === true || (isNaN(distance) === true)){
-        alert("WTF!! WHO STOLE MY BUTTER?!");
+        alert("The fail is strong in you.");
         return;
     }
      // use the worker function and get the force
