@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8"/>
+            <title>JavaScript Functions</title>
+            <script type="text/javascript" src="f2c.js"></script>
+        </head>
+        <body>
+            Convert from Fahrenheit to Celsius
+            <form>
+                <label for="num">Degrees Fahrenheit</label>
+                <input type="text" id="num" name="num" /><br>
+                <!-- console command: document.getElementById("first"); if we append .value to the end of that statement we get the value in the field
+                returned in the console
+                
+                will highlight the above element-->
+                <!--id can be used for javascript and html...name is for php -->
+                <br>
+                <button type="button" onClick="f2CCallback();">Convert</button>
+                 
+            </form>
+           
+            <!--
+            The function says your number is:
+            <script>
+            prompt("Give a number");
+            prompt("Give me another");
+            document.write(addTwoNumbers(1,2));
+        
+            </script>
+            -->
+           
+            <p id="outputArea"></p><!-- placeholder for where javascript will display the output -->
+        </body>
+    </html>
