@@ -2,14 +2,15 @@
  * converts celsius to fahrenheit
  *
  * @param double celsius to be converted
- * @returns double sum of celsius converted to fahrenheit
+ * @returns double temp of celsius converted to fahrenheit
  **/
 function tempConvertCel(celsius) {
     // Multiply Celsius by 1.8, then add 32
-    var sum = (celsius * 1.8) + 32;
+    var temp = (celsius * 1.8) + 32;
+    var temp = temp.toFixed(2);
     
     // when the task is complete return the reults
-    return(sum);
+    return(temp);
 }
 
 
@@ -17,15 +18,15 @@ function tempConvertCel(celsius) {
  * converts fahrenheit to celsius
  *
  * @param double fahrenheit to be converted
- * @returns double sum of fahrenheit converted to celsius
+ * @returns double temp of fahrenheit converted to celsius
  **/
 function tempConvertFah(fahrenheit) {
     // Subtract 32 from fahrenheit, then divide by 1.8
-    var sum = (fahrenheit - 32) / 1.8;
-    var sum = sum.toFixed(2);
+    var temp = (fahrenheit - 32) / 1.8;
+    var temp = temp.toFixed(2);
     
     // when the task is complete return the reults
-    return(sum);
+    return(temp);
 }
 
 
@@ -45,11 +46,20 @@ function tempConvertCelCallback() {
         return;
     }
     
+    // alerts for record breaking temperatures
+    if (celsius > 56.7) {
+        alert("You just broke the world record! The hottest temperature recorded on Earth was 134 degrees Fahrenheit (56.7 degrees Celsius) on July 10, 1913");
+    }
+    if (celsius < -93.22) {
+        alert("You just broke the world record! The coldest temperature recorded on Earth was -135.8 degrees Fahrenheit (-93.22 degrees Celsius) on August 2010");
+    }
+
+    
     // use the worker function and get the output
-    var sum = tempConvertCel(celsius);
+    var temp = tempConvertCel(celsius);
     
     // display the converted answer
-    document.getElementById("outputAreaFahrenheit").innerHTML = sum + " degrees Fahernheit";
+    document.getElementById("outputAreaFahrenheit").innerHTML = temp + " degrees Fahernheit";
 
 }
 
@@ -69,15 +79,20 @@ function tempConvertFahCallback() {
         alert("Invalid temperature, try again");
         return;
     }
-    if (fahrenheit > 100) {
-        alert("HOT HOT HOT!");
+    
+    // alerts for record breaking temperatures
+    if (fahrenheit > 134) {
+        alert("You just broke the world record! The hottest temperature recorded on Earth was 134 degrees Fahrenheit (56.7 degrees Celsius) on July 10, 1913");
+    }
+    if (fahrenheit < -135.8) {
+        alert("You just broke the world record! The coldest temperature recorded on Earth was -135.8 degrees Fahrenheit (-93.22 degrees Celsius) on August 2010");
     }
     
     // use the worker function and get the output
-    var sum = tempConvertFah(fahrenheit);
+    var temp = tempConvertFah(fahrenheit);
     
     // display the converted answer
-    document.getElementById("outputAreaCelsius").innerHTML = sum + " degrees Celsius";
+    document.getElementById("outputAreaCelsius").innerHTML = temp + " degrees Celsius";
 
 }
 
