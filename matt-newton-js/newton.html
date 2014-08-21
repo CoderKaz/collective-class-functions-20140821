@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Gravity Calculation</title>
+        <script type="text/javascript" src="newton.js"></script>
+    </head>
+    <body>
+        <form>
+            <label for="gravity">Constant Gravity:</label>
+            <input type="text" id="gravity" name="gravity" /> <br />
+            <label for="massOne">First Mass:</label>
+            <input type="text" id="massOne" name="massOne" /> <br />
+            <label for="massTwo">Second Mass:</label>
+            <input type="text" id="massTwo" name="massTwo" /> <br />
+            <label for="distance">Distance:</label>
+            <input type="text" id="distance" name="distance" /> <br />
+            <button type="button" onClick="forceCallBack();">Calculate</button>
+        </form>
+        <p id="outputArea"></p>
+    </body>
+</html>
