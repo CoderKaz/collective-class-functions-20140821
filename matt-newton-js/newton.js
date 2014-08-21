@@ -8,7 +8,7 @@
  * @returns double answer
  **/
 function force (gravity, massOne, massTwo, distance) {
-    var answer = massOne * massTwo / distance^2 * gravity;
+    var answer = (massOne * massTwo) / (distance * distance) * gravity;
     return (answer);
 }
 
