@@ -1,6 +1,8 @@
 /**
  * takes two masses and calculates the gravitational attraction between them them
- *
+ * massOne and massTwo are the objects that are getting their gravitational force measured (think along the lines of mutal Force pull)
+ * distance is the distance between massOne and massTwo
+ * 
  * @param double gravity number to answer
  * @param double massOne number to answer
  * @param double massTwo number to answer
@@ -30,7 +32,7 @@ function forceCallBack() {
     distance = parseFloat(distance);
 
     if (isNaN(gravity) === true || isNaN(massOne) === true || isNaN(massTwo) === true || (isNaN(distance) === true)){
-        alert("The fail is strong in you.");
+        alert("The fail is strong in you. Use numbers, you must");
         return;
     }
      // use the worker function and get the force
