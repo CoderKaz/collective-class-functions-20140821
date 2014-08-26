@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ohm's Law function</title>
+    <script type="text/javascript" src="ohmslaw-2.js"></script>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+</head>
+
+<body>
+    <form>
+        
+        <label for="current">Current (I)</label>
+        <input type="text" id="current" name="current" /><br />
+        <label for="voltage">Voltage (V)</label>
+        <input type="text" id="voltage" name="voltage" /><br />
+        <button type="button" onClick="calculateResistanceCallback();">Resistance &Omega;</button><br /><br />
+        
+        <label for="Resistance">Resistance (kOhm)</label>
+        <input type="text" id="resistance" name="resistance" /><br />
+        <label for="voltage1">voltage (V)</label>
+        <input type="text" id="voltage1" name="voltage1" /><br />
+        <button type="button" onClick="calculateCurrentCallback();">Current (I)</button>
+        
+    </form>
+        <p id="outputArea"></p>
+
+</body>
+
+</html>
