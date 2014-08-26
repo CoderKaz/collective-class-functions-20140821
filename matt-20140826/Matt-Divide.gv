@@ -1,0 +1,31 @@
+digraph g {
+    s  [ label="input number"];
+    a  [ label="Click Button"];
+    b  [ label="Onclick"];
+    c  [ label="Callback"];
+    d1 [ label="If No"];
+    d2 [ label="If Yes"];
+    e1 [ label="Throw Exception"];
+    e2 [ label="Check If Second Number == 0"];
+    y1 [ label="If No"];
+    y2 [ label="If Yes"];
+    y3 [ label="Throw Exception"];
+    z1 [ label="Divide"];
+    z2 [ label="Returns Value"];
+    x  [ label="Callback Writes To DOM"];
+    s -> a;
+    a -> b;
+    b -> c;
+    c -> d1  [ label="No"];
+    c -> d2  [ label="Yes"];
+    d1 -> e1;
+    e1 -> x;
+    d2 -> e2;
+    e2 -> y1 [ label="No"];
+    e2 -> y2 [ label="Yes"];
+    y2 -> y3;
+    y3 -> x;
+    y1 -> z1;
+    z1 -> z2;
+    z2 -> x;
+}
