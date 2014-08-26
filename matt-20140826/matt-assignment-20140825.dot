@@ -3,6 +3,7 @@ digraph g {
     a  [ label="Click Button"];
     b  [ label="Onclick"];
     c  [ label="Callback"];
+    v  [ label="Is It A Number"];
     d1 [ label="If No"];
     d2 [ label="If Yes"];
     e1 [ label="Throw Exception"];
@@ -16,8 +17,9 @@ digraph g {
     s -> a;
     a -> b;
     b -> c;
-    c -> d1  [ label="No"];
-    c -> d2  [ label="Yes"];
+    c -> v;
+    v -> d1  [ label="No"];
+    v -> d2  [ label="Yes"];
     d1 -> e1;
     e1 -> x;
     d2 -> e2;
