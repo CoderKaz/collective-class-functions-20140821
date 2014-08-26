@@ -32,6 +32,6 @@ function milesConvertCallback() {
     //use the worker function and get the output
     var conversion = milesConvert(distance);
     
-    //do something "useful" - i.e., display the answer
+    //do something "useful" - i.e., displaythe number
     document.getElementById("outputArea").innerHTML = conversion + " km";
 }
