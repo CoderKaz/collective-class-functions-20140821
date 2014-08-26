@@ -8,6 +8,8 @@
 
 function exchangeRateMultiply(first, second){
     var rubles = first * second;
+      //.tofixed rounds numbers for our convience
+    var rubles=rubles.toFixed(2);
     return (rubles);
 }
 
@@ -17,7 +19,7 @@ function exchangeRateMultiply(first, second){
  **/
 
 function exchangeRateMultiplyCallback() {
-    //sanitize inputs from the DOM
+    //get inputs from the DOM
     var pesos = document.getElementById("pesos").value;
     var exchangeRate = document.getElementById("exchangeRate").value;
     
@@ -27,7 +29,7 @@ function exchangeRateMultiplyCallback() {
     
     //verify inputs
     if (isNaN(pesos) === true || isNaN(exchangeRate)  === true) {
-        alert("Invalid  inputs detected!")
+        alert("Please enter valid numbers!")
         return;
     }
     
